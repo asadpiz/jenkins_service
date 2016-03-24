@@ -1,6 +1,4 @@
-# jenkins_service
-
-## Sets Up a Jenkins Instance automatically
+# Puppet Module that Installs Jenkins alongwith most common Plugins
 
 ## VM Setup :
 
