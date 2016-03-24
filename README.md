@@ -4,7 +4,7 @@
 
 ## VM Setup :
 
-    On base CentOS 7 machine (MMS OS Template) as "sudo" install Masterless Puppet 3.8 with require modules (i.e., apache, firewalld, jenkins).
+On base CentOS 7 machine (MMS OS Template) as "sudo" install Masterless Puppet 3.8 with require modules (i.e., apache, firewalld, jenkins).
 
 ```bash
 rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
@@ -21,9 +21,10 @@ git clone https://github.com/asadpiz/jenkins_service.git
 
 puppet apply jaabsnp6
 ```
-    Jenkins is installed along with pre-defined plugins and can be accessed at the VM's IP + port 8080.
 
-Source Overview:
+**Jenkins is installed along with pre-defined plugins and can be accessed at the VM's IP + port 8080.**
+
+## Source Overview:
 
 The Puppet source is divided into 3 manifests for the sake of simplicity. These manifests make use of classes from corresponding puppet modules.
 
