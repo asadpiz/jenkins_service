@@ -7,9 +7,7 @@ On base CentOS 7 machine (MMS OS Template) as "sudo" install Masterless Puppet 3
 ```bash
 rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
 
-yum install puppet
-
-puppet module install puppetlabs-apache --version 1.7.0 
+sudo yum -y install puppet
 
 puppet module install rtyler-jenkins --version 1.6.1
 
@@ -17,7 +15,7 @@ puppet module install crayfishx-firewalld --version 2.0.0
 
 git clone https://github.com/asadpiz/jenkins_service.git
 
-puppet apply jaabsnp6
+sudo puppet apply jenkins_service
 ```
 
 **Jenkins is installed along with pre-defined plugins and can be accessed at the VM's IP + port 8080.**
